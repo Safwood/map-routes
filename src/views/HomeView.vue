@@ -27,15 +27,15 @@ import AboutIcon from "../components/icons/IconAbout.vue";
 
 <style>
 .home-page {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
 }
 
 .side-bar {
   height: 100%;
-  width: 60px;
-  background-color: var(--vt-c-black-mute);
+  width: var(--vt-side-bar-width);
+  background-color: var(--dark-grey-color);
 }
 
 .side-bar nav {

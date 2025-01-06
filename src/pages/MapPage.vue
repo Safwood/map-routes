@@ -1,12 +1,18 @@
-<script setup></script>
+<script setup>
+import MainMap from "../components/MainMap/MainMap.vue";
+</script>
 
 <template>
-  <main class="map-page"><router-view /></main>
+  <div class="map-page">
+    <router-view />
+    <MainMap />
+  </div>
 </template>
 
 <style scoped>
 .map-page {
-  height: 100vh;
-  width: 100px;
+  height: 100%;
+  width: calc(100% - var(--vt-side-bar-width));
+  display: flex;
 }
 </style>
