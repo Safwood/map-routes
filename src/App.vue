@@ -9,6 +9,13 @@ import { RouterView } from "vue-router";
 <style>
 @import "@/assets/base.css";
 
+html,
+body,
+#app {
+  height: 100%;
+  width: 100%;
+}
+
 .white-icon {
   color: white;
 }
