@@ -1,5 +1,12 @@
-<script setup lang="ts"></script>
+<script setup></script>
 
 <template>
-  <main>AboutPage</main>
+  <main class="about-page">AboutPage</main>
 </template>
+
+<style scoped>
+.about-page {
+  height: 100vh;
+  width: 100%;
+}
+</style>
