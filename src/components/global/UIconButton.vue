@@ -11,7 +11,7 @@
   </button>
 </template>
 
-<style>
+<style lang="scss">
 .icon-button {
   display: inline-flex;
   align-items: center;

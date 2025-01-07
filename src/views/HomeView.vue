@@ -32,7 +32,7 @@ import MainMap from "../components/MainMap.vue";
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .home-page {
   height: 100%;
   width: 100%;

@@ -41,19 +41,18 @@ import LocationIcon from "../icons/IconLocation.vue";
   </li>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .item {
   margin-bottom: 4px;
   width: 100%;
   transition: background-color 0.6s;
   display: flex;
   align-items: center;
-  height: 100%;
   padding: 0 13px 0 0;
-}
 
-.item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .item:hover {
