@@ -28,7 +28,7 @@ import LocationIcon from "../icons/IconLocation.vue";
       <div class="hidden-button">
         <UIconButton>
           <!-- onClick="{handleLocationButtonClick}" -->
-          <LocationIcon class="medium-icon purple-icon" />
+          <LocationIcon class="medium-icon yellow-icon" />
         </UIconButton>
       </div>
 
@@ -40,6 +40,7 @@ import LocationIcon from "../icons/IconLocation.vue";
     </div>
   </li>
 </template>
+
 <style scoped>
 .item {
   margin-bottom: 4px;

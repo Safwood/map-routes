@@ -7,6 +7,7 @@
 <style scoped>
 .about-page {
   height: 100%;
-  width: calc(100% - var(--side-bar-width));
+  width: 100%;
+  background-color: white;
 }
 </style>

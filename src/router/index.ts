@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import MapPage from "../pages/MapPage.vue";
 import ParksPage from "../pages/ParksPage.vue";
 
 const router = createRouter({
@@ -12,25 +11,14 @@ const router = createRouter({
       component: HomeView,
       children: [
         {
-          name: "map",
-          path: "map",
-          component: MapPage,
-          children: [
-            {
-              name: "parks",
-              path: "parks",
-              component: ParksPage,
-            },
-            {
-              name: "stores",
-              path: "stores",
-              component: () => import("../pages/StoresPage.vue"),
-            },
-            {
-              path: "",
-              redirect: { name: "parks" },
-            },
-          ],
+          name: "parks",
+          path: "parks",
+          component: ParksPage,
+        },
+        {
+          name: "stores",
+          path: "stores",
+          component: () => import("../pages/StoresPage.vue"),
         },
         {
           name: "about",

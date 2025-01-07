@@ -41,12 +41,14 @@
 :root {
   --green-background-1: var(--green-light-1);
   --green-background-2: var(--green-light-2);
+  --yellow-background: var(--yellow-light-2);
 
   --dark-green-text: var(--green-dark-2);
   --purple-text: var(--purple-main);
 
-  --side-bar-width: 60px;
+  --side-bar-width: 400px;
   --side-panel-header-height: 60px;
+  --filter-height: 60px;
   --section-gap: 160px;
 }
 

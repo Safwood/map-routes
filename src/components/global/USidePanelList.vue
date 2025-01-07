@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <ul>
+  <ul class="list">
     <PerfectScrollbar class="scrollbar">
       <slot></slot>
     </PerfectScrollbar>
@@ -11,9 +11,12 @@
 <style>
 .list {
   width: 100%;
-  height: calc(100% - 0);
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 100%;
+}
+
+.scrollbar {
+  width: 100%;
+  height: 100%;
   padding: 2px;
   display: flex;
   flex-direction: column;

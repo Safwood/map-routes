@@ -27,6 +27,6 @@ const setMap = (mapLayer: Map) => {
 <style scoped>
 .map {
   height: 100%;
-  width: 100%;
+  width: calc(100% - var(--side-bar-width));
 }
 </style>
