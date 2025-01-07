@@ -1,7 +1,16 @@
-<script setup></script>
+<script setup>
+import { useMapItemsStore } from "../stores/mapItems";
+
+const { parks } = useMapItemsStore();
+</script>
 
 <template>
-  <div class="parks-page">ParksPage</div>
+  <div class="parks-page">
+    <h1>Парки</h1>
+    <ul class="list">
+      <li class="item" v-for="el in parks" :key="el.id">{{ el.name }}</li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
