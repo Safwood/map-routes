@@ -1,22 +1,29 @@
 <script setup>
 import { useMapItemsStore } from "../stores/mapItems";
+import ParkIcon from "../components/icons/IconPark.vue";
 
 const { parks } = useMapItemsStore();
 </script>
 
 <template>
   <div class="parks-page">
-    <h1>Парки</h1>
-    <ul class="list">
-      <li class="item" v-for="el in parks" :key="el.id">{{ el.name }}</li>
-    </ul>
+    <USidePanel>
+      <template #title>Парки</template>
+      <USidePanelList>
+        <USidePanelItem v-for="el in parks" :key="el.id">
+          <template #badge><ParkIcon class="yellow-icon" /></template>
+          {{ el.name }}
+          <template #description>{{ el.address }}</template>
+        </USidePanelItem>
+      </USidePanelList>
+    </USidePanel>
   </div>
 </template>
 
 <style scoped>
 .parks-page {
   height: 100%;
-  width: 500px;
+  width: 400px;
   background-color: white;
   flex-shrink: 0;
 }

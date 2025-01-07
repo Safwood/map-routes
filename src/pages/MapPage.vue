@@ -12,7 +12,7 @@ import MainMap from "../components/MainMap/MainMap.vue";
 <style scoped>
 .map-page {
   height: 100%;
-  width: calc(100% - var(--vt-side-bar-width));
+  width: calc(100% - var(--side-bar-width));
   display: flex;
 }
 </style>

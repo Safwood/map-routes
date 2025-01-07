@@ -8,20 +8,4 @@ import { RouterView } from "vue-router";
 
 <style>
 @import "@/assets/base.css";
-
-html,
-body,
-#app {
-  height: 100%;
-  width: 100%;
-}
-
-.white-icon {
-  color: white;
-}
-
-.icon {
-  height: 30px;
-  width: 30px;
-}
 </style>

@@ -7,6 +7,6 @@
 <style scoped>
 .about-page {
   height: 100%;
-  width: calc(100% - var(--vt-side-bar-width));
+  width: calc(100% - var(--side-bar-width));
 }
 </style>

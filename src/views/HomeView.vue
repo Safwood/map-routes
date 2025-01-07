@@ -9,15 +9,15 @@ import AboutIcon from "../components/icons/IconAbout.vue";
   <div class="home-page">
     <div class="side-bar">
       <nav>
-        <RouterLink to="/map/parks"
-          ><ParkIcon class="icon white-icon"
-        /></RouterLink>
-        <RouterLink to="/map/stores"
-          ><StoreIcon class="icon white-icon"
-        /></RouterLink>
-        <RouterLink to="/about"
-          ><AboutIcon class="icon white-icon"
-        /></RouterLink>
+        <RouterLink to="/map/parks">
+          <ParkIcon class="xxl-icon dark-green-icon" />
+        </RouterLink>
+        <RouterLink to="/map/stores">
+          <StoreIcon class="xxl-icon dark-green-icon" />
+        </RouterLink>
+        <RouterLink to="/about">
+          <AboutIcon class="xxl-icon dark-green-icon" />
+        </RouterLink>
       </nav>
     </div>
 
@@ -34,8 +34,8 @@ import AboutIcon from "../components/icons/IconAbout.vue";
 
 .side-bar {
   height: 100%;
-  width: var(--vt-side-bar-width);
-  background-color: var(--dark-grey-color);
+  width: var(--side-bar-width);
+  background-color: var(--green-background-2);
 }
 
 .side-bar nav {
@@ -44,6 +44,10 @@ import AboutIcon from "../components/icons/IconAbout.vue";
   height: 60px;
   width: 100%;
   padding: 15px;
+}
+
+.side-bar a {
+  margin-bottom: 10px;
 }
 
 .icon {

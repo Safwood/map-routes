@@ -7,7 +7,7 @@
 <style scoped>
 .stores-page {
   height: 100%;
-  width: 500px;
+  width: 400px;
   background-color: white;
   flex-shrink: 0;
 }

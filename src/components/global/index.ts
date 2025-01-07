@@ -1,7 +1,15 @@
 import type { App } from "@/main";
-import UInput from "./UButton.vue";
+import USidePanel from "./USidePanel.vue";
+import USidePanelItem from "./USidePanelItem.vue";
+import USidePanelList from "./USidePanelList.vue";
+import UIconButton from "./UIconButton.vue";
 
-const components = [{ name: "UInput", component: UInput }];
+const components = [
+  { name: "USidePanel", component: USidePanel },
+  { name: "USidePanelItem", component: USidePanelItem },
+  { name: "USidePanelList", component: USidePanelList },
+  { name: "UIconButton", component: UIconButton },
+];
 
 export default {
   install(app: App) {
