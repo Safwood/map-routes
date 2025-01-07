@@ -1,12 +1,27 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { defineProps } from "vue";
+
+defineProps({
+  isDisabled: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+  id: {
+    type: String,
+    required: false,
+    default: "",
+  },
+});
+</script>
 
 <template>
-  <button class="icon-button">
-    <!-- 
-  onClick={!isMouseDownAction ? handleClick : () => {}}
-  onMouseDown={isMouseDownAction ? handleClick : () => {}}
-  disabled={isDisabled}
-  id={id} -->
+  <button
+    class="icon-button"
+    :disabled="isDisabled"
+    :id="id"
+    @click="$emit('click')"
+  >
     <slot></slot>
   </button>
 </template>

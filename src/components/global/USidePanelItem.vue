@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import EditIcon from "../icons/IconEdit.vue";
 import LocationIcon from "../icons/IconLocation.vue";
-//  onClick,
-//  onMouseEnter,
-//  onMouseLeave
+
+const locateItem = () => {
+  console.log("locate");
+};
+const editItem = () => {
+  console.log("edit");
+};
 </script>
+
 <template>
   <li class="item">
-    <!-- onClick={onClick}
-    onMouseEnter={onMouseEnter}
-    onMouseLeave={onMouseLeave} -->
-
     <div class="item__content">
       <div class="item__badge">
         <slot name="badge"></slot>
@@ -26,16 +27,13 @@ import LocationIcon from "../icons/IconLocation.vue";
     </div>
     <div class="item__buttons">
       <div class="hidden-button">
-        <UIconButton>
-          <!-- onClick="{handleLocationButtonClick}" -->
+        <UIconButton :is-disabled="false" @click="locateItem">
           <LocationIcon class="medium-icon yellow-icon" />
         </UIconButton>
       </div>
 
-      <UIconButton>
-        <!-- onClick="{handleEditClick}" -->
-        <!-- isDisabled="{shouldOpenTloPassportCard}" -->
-        <EditIcon class="medium-icon purple-icon" />
+      <UIconButton :is-disabled="false" @click="editItem">
+        <EditIcon class="medium-icon grey-icon" />
       </UIconButton>
     </div>
   </li>

@@ -217,7 +217,7 @@ button:disabled {
 }
 
 .grey-icon {
-  color: grey;
+  color: var(--grey-6);
 }
 
 .grey-icon .isSelected {
