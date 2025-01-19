@@ -4,6 +4,16 @@ import ParkIcon from "../components/icons/IconPark.vue";
 import StoreIcon from "../components/icons/IconStore.vue";
 import AboutIcon from "../components/icons/IconAbout.vue";
 import MainMap from "../components/MainMap.vue";
+import { onMounted } from "vue";
+import axios from "axios";
+
+onMounted(() => {
+  const response = axios.post("http://localhost:8000/auth/sign-in", {
+    username: "test",
+    password: "test",
+  });
+  console.log(response);
+});
 </script>
 
 <template>
